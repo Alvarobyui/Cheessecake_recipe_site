@@ -1,0 +1,181 @@
+/*por Alvaro M. Diaz - Funval 2023*/
+
+
+:root {
+    --negro: #000;
+    --gris-oscuro: #333;
+    --gris-claro: #BDBDBD;
+    --orange: #F2994A;
+
+}
+
+/* Pega esto al inicio de tu CSS*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  .material-icon-orange{
+      color: #F2994A;
+  }
+  
+  .naterial-icon-reloj {
+      color: #4F4F4F;
+  }
+
+
+body {
+    max-width: 1440px;
+	margin: auto;
+}
+
+h1, h1, h3, .counting-icon{
+    font-family: 'Playfair Display', serif;
+}
+
+p, .cooking-tip-title {
+    font-family: 'Montserrat', sans-serif;
+}
+p, li {
+    font-size: 18px;
+}
+/*Header*/
+
+.main-img {
+    max-width: 100%;
+    margin: 40px 0;
+}
+.dots { 
+    padding-top:8px;
+    height: 12px;
+}
+.header-content {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+
+}
+.header-title {
+    font-weight: 500px;
+    font-size: 48px;
+    margin-bottom: 13px;
+}
+.header-text {
+    margin-top: 0px;
+    text-align: left;
+}
+
+/*Contenido principal*/
+h2 {
+    font-size: 30px;
+}
+.ingre-and-aside {
+    display: flex;
+    justify-content: space-between; 
+}
+
+h3 { 
+    font-style: italic;
+    font-weight: 200;
+}
+
+.ingre-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.instructions {
+    margin-bottom: 0px;
+    margin-top: 35px;
+}
+.ingre-section div p {
+    margin: 8px 0;
+}
+
+
+/*cuadrados naranjas para numerar el contenido*/
+.counting-icon {
+    background-color: var(--orange);
+    padding: 0px 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+
+.instructions-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 100vh;
+    margin-top: 25px;
+}
+.instru-text {
+    margin-top: 0px;
+}
+
+/*sección aside*/
+.cooking-tip-title {
+    color: var(--gris-claro);
+    font-size: 15px;
+
+}
+.material-symbols-outlined {
+    font-size: 40px;
+}
+.icon-set {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.cooking-tip {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.icons-container {
+    margin: 20px 80px 20px 10px;
+}
+
+
+
+/*Footer*/
+footer { 
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+/*Parcialmente responsivo*/
+
+@media (max-width: 29rem) {  
+    p, li {
+        font-size: 12px;
+    }
+    .header-title {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+
+    .counting-icon {
+        font-size: 12px;
+    }
+    .cooking-tip {
+        margin-top: 0;
+        font-size: 11px;
+    }
+    .cooking-tip-title {
+        font-size: 11px;
+    
+    }
+}
