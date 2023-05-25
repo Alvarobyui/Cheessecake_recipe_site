@@ -59,7 +59,7 @@ p, li {
 
 }
 .header-title {
-    font-weight: 500px;
+    font-weight: 900;
     font-size: 48px;
     margin-bottom: 13px;
 }
@@ -74,7 +74,7 @@ h2 {
 }
 .ingre-and-aside {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 h3 { 
@@ -137,16 +137,24 @@ h3 {
     margin-top: 0;
     font-size: 16px;
 }
-
-.icons-container {
-    margin: 20px 80px 20px 10px;
+#orange-title {
+    color: var(--orange); 
 }
-
+.icons-container {
+    /* max-height: 100%; */
+    /* margin: 20px 10px 20px; */
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .1);
+    padding: 85px 70px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 
 /*Footer*/
 footer { 
-    margin-top: 50px;
+    margin: 50px 0 20px;
     text-align: center;
     font-size: 20px;
 }
@@ -156,7 +164,26 @@ footer {
 
 /*Parcialmente responsivo*/
 
-@media (max-width: 29rem) {  
+@media (max-width: 40rem) {  
+
+    body {
+        max-width: 1440px;
+        margin: 0 10px;
+    }
+    .ingre-and-aside {
+        flex-direction: column-reverse;
+    }
+    
+    .icons-container {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
     p, li {
         font-size: 12px;
     }
@@ -178,4 +205,11 @@ footer {
         font-size: 11px;
     
     }
+    .ingredients-title {
+        font-size: 30px;
+    }
+    footer { 
+        font-size: 10px;
+    }
+
 }
